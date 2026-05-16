@@ -16,7 +16,8 @@
     "dev": "tsx src/index.ts",
     "test": "vitest run",
     "type-check": "tsc --build --pretty false",
-    "verify": "npm run type-check && npm run build && npm run test"
+    "verify": "npm run type-check && npm run build && npm run test",
+    "prepare": "npm run build"
   },
   "dependencies": {
     "commander": "^14.0.2"
