@@ -1,0 +1,51 @@
+{
+  "name": "@payin/cli",
+  "version": "0.1.0-local",
+  "description": "PayIn operator CLI for Open and Cloud runtimes",
+  "type": "module",
+  "bin": {
+    "payin": "dist/index.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc --build",
+    "dev": "tsx src/index.ts",
+    "test": "vitest run",
+    "type-check": "tsc --build --pretty false",
+    "verify": "npm run type-check && npm run build && npm run test"
+  },
+  "dependencies": {
+    "commander": "^14.0.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.19.24",
+    "tsx": "^4.20.6",
+    "typescript": "^5.9.3",
+    "vitest": "^1.6.1"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  },
+  "keywords": [
+    "payin",
+    "stablecoin",
+    "payments",
+    "operator",
+    "cli"
+  ],
+  "author": "PayIn Development Team",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/payincom/payin-cli.git"
+  },
+  "bugs": {
+    "url": "https://github.com/payincom/payin-cli/issues"
+  },
+  "homepage": "https://github.com/payincom/payin-cli#readme"
+}
